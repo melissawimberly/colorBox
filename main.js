@@ -20,7 +20,7 @@ $( document ).ready(function() {
 				colors[decColors[i]] = check(colors[decColors[i]]);
 			};
 
-			var rgbString = 'rgb('+ colors.red + ', ' + colors.green + ', ' + colors.blue + ')';
+			var rgbString = `rgb(${colors.red},${colors.green},${colors.blue})`;
 			$('#box').css('background-color', rgbString);
 
 			var colorArray = [colors.red, colors.green, colors.blue];
