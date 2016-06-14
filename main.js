@@ -34,7 +34,6 @@ $( document ).ready(function() {
 		if(colorValue>255){
 			return 255;
 		}
-
 		if(colorValue< 0){
 			return 0;
 		}
