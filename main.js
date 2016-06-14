@@ -42,11 +42,13 @@ $( document ).ready(function() {
 
 	function isDarkest(colorArray){
 		var count = 0;
+		var sum   = colorArray.reduce((a,b) => a+b);
 		for(var i = 0; i < colorArray.length; i++){
 			if(colorArray[i] == 0){
 				count++;
 			}
-			if(count == 2){
+
+			if(count == 2 && sum == 255){
 				$('#error').show();
 			}else{
 				$('#error').hide();
